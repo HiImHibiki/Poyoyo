@@ -1,0 +1,10 @@
+search-result {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 1280px;
+    width: 100%;
+    color: #fefefe;
+}

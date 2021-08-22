@@ -1,0 +1,80 @@
+trailer-container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+trailer-container > iframe {
+    width: 100%;
+    height: 500px;
+}
+
+anime-data {
+    display: flex;
+    flex-direction: column;
+    color: #fefefe;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+
+.top-anime-container {
+    margin-top: 5rem;
+    display: flex;
+}
+
+.anime-img {
+    max-width: 200px;
+    max-height: 280px;
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+.anime-img > img {
+    width: 100%;
+    height: 100%;
+}
+
+.anime-desc {
+    margin-left: 2rem;
+}
+
+anime-data h2 {
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+
+anime-data p {
+    font-size: 18px;
+}
+
+.anime-synopsis {
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1280px) {
+    anime-data {
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    anime-data {
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    anime-data {
+        max-width: 350px;
+    }
+    .top-anime-container {
+        align-items: center;
+        flex-direction: column;
+    }
+    .anime-img {
+        margin-bottom: 2rem;
+    }
+}

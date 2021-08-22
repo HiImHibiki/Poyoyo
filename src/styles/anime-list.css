@@ -1,0 +1,148 @@
+anime-list {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 5rem;
+    width: 100%;
+    max-width: 1280px;
+    overflow: hidden;
+    color: #fefefe;
+}
+
+.sort-bar .dropbtn {
+    display: flex;
+    width: 180px;
+    height: 40px;
+    margin: 2rem 3rem 0;
+    border: 1px solid white;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 8px;
+}
+
+.dropbtn > p {
+    margin: 0 2rem 0 1rem;
+}
+
+.dropbtn > i {
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    position: absolute;
+    background-color: #282828;
+    border: 1px solid white;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    margin-left: 3rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+    /* transition: opacity 0.2s ease-out; */
+}
+
+.dropdown-content i {
+    border-top: 0.5px solid #fefefe;
+    font-family: inherit;
+    font-style: normal;
+    font-size: 13.5px;
+    color: inherit;
+    width: 178px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+    text-align: left;
+    text-indent: 15px;
+}
+
+.dropdown-content i:hover {
+    background-color: #4a4a4a;
+}
+
+.dropbtn-border-active {
+    border-bottom: none !important;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.dropdown-active {
+    opacity: 1;
+}
+
+.item-container {
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+}
+
+anime-list h1 {
+    margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+anime-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    width: 180px;
+    animation: fadeIn 0.5s forwards;
+}
+
+anime-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+anime-item img {
+    width: 100%;
+    max-height: 240px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+anime-item p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .item-container {
+        grid-template-columns: auto auto auto auto;
+    }
+    anime-item {
+        margin: 20px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .item-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    anime-list h1 {
+        font-size: 35px;
+    }
+    .item-container {
+        grid-template-columns: auto auto;
+    }
+}
