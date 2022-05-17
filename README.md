@@ -16,9 +16,9 @@ https://poyoyo.netlify.app
 
 ### Built With
 
-- [*HTML*]
-- [*CSS*]
-- [*JS*]
+- [**HTML**]
+- [**CSS**]
+- [**JS**]
 
 ## Author
 
