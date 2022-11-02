@@ -1,5 +1,5 @@
 const axios = require("axios");
-const baseUrl = "https://api.jikan.moe/v3";
+const baseUrl = "https://api.jikan.moe/v4";
 
 class DataSource {
     static getFeatured() {
